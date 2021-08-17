@@ -7,7 +7,7 @@
     --text-color: hsl(var(--hue-color), 12%. 35%);
     --text-color-light: hsl(var(--hue-color), 12%. 65%);
     --white-color: #fff;
-    --text-color: hsl(var(--hue-color), 24%. 94%);
+    --body-color: hsl(var(--hue-color), 24%. 94%);
 
     --body-font: 'Poppins', sans-serif;
     --biggest-font-size: 3rem;
@@ -27,4 +27,40 @@
     /* z-index */
     --z-normal: 1; 
     --z-tooltip: 10;
+}
+
+@media screen and (min-width: 968px) {
+    :root {
+        --biggest-font-size: 3.5rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+    --tiny-font-size: -75rem;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: var(--body-font);
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 968px;
+    margin-left: var(--mb-0-1);
+    margin-right: var(--mb-0-1);
+}
+
+.grid {
+    display: grid;
 }
