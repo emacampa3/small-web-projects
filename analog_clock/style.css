@@ -20,9 +20,9 @@
 
     /* margenes bottom */
     --mb-0-25: .25rem; 
-    --mb-0-1:1rem;
-    --mb-0-1-5:1.5rem;
-    --mb-0-2-5:2.5rem;
+    --mb-1:1rem;
+    --mb-1-5:1.5rem;
+    --mb-2-5:2.5rem;
 
     /* z-index */
     --z-normal: 1; 
@@ -32,12 +32,12 @@
 @media screen and (min-width: 968px) {
     :root {
         --biggest-font-size: 3.5rem;
-    --small-font-size: .875rem;
-    --smaller-font-size: .813rem;
-    --tiny-font-size: -75rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
+        --tiny-font-size: -75rem;
     }
 }
-
+ /* base */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -57,10 +57,50 @@ a {
 
 .container {
     max-width: 968px;
-    margin-left: var(--mb-0-1);
-    margin-right: var(--mb-0-1);
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
 }
 
 .grid {
     display: grid;
+}
+
+.clock_container {
+    height: 100vh;
+    grid-template-rows: 1fr max-content;
+}
+
+.clock_circle {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    box-shadow: -6px -6px 16px var(--white-color),
+                6px 6px 16px hsla(var(--hue-color), 30%, 86%, 1),
+                inset 6px 6px 16px hsla(var(--hue-color), 30%, 86%, 1),
+                inset 6px -6px 16px var(--white-color);
+    border-radius: 50%;
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock_content {
+    align-self: center;
+    row-gap: 3.5rem;
+}
+
+.clock_twelve,
+.clock_three,
+.clock_six,
+.clock_nine {
+    position: absolute;
+    width: 1rem;
+    height: 1px;
+    background-color: var(--text-color-light);
+}
+
+.clock_twelve,
+.clock_six {
+    transform: translateX(-50%) rotate(90deg);
 }
