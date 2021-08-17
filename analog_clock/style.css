@@ -55,7 +55,7 @@ body.dark-theme {
     border-radius: 50%;
     box-shadow: inset -1px -1px 1px hsla(var(--hue-color), 0%, 100%, 1), 
                 inset 1px 1px 1px hsla(var(--hue-color), 30%, 86%, 1);
-    color: var(--first-color);
+    color: var(--title-color);
     cursor: pointer;
 }
   
@@ -83,7 +83,7 @@ body {
     margin: 0;
     font-family: var(--body-font);
     background-color: var(--body-color);
-    color: var(--text-color);
+    color: var(--title-color);
 }
 
 /* reusable css classes */
@@ -130,7 +130,7 @@ body {
     position: absolute;
     width: 1rem;
     height: 1px;
-    background-color: var(--text-color-light);
+    background-color: var(--title-color);
 }
   
 .clock_twelve, 
@@ -161,9 +161,9 @@ body {
 .clock_rounder {
     width: .75rem;
     height: .75rem;
-    background-color: var(--first-color);
+    background-color: var(--title-color);
     border-radius: 50%;
-    border: 2px solid var(--body-color);
+    border: 2px solid var(--title-color);
     z-index: var(--z-tooltip);
 }
 
@@ -183,7 +183,7 @@ body {
 .clock_hour::before {
     content: '';
     position: absolute;
-    background-color: var(--text-color);
+    background-color: var(--title-color);
     width: .25rem;
     height: 3rem;
     border-radius: .75rem;
@@ -198,7 +198,7 @@ body {
 .clock_minutes::before {
     content: '';
     position: absolute;
-    background-color: var(--text-color);
+    background-color: var(--title-color);
     width: .25rem;
     height: 4rem;
     border-radius: .75rem;
@@ -213,7 +213,7 @@ body {
 .clock_seconds::before {
     content: '';
     position: absolute;
-    background-color: var(--first-color);
+    background-color: var(--title-colors);
     width: .125rem;
     height: 5rem;
     border-radius: .75rem;
@@ -226,12 +226,12 @@ body {
     margin-bottom: var(--mb-2-5);
     font-size: var(--smaller-font-size);
     font-weight: var(--font-medium);
-    color: var(--text-color-light);
+    color: var(--title-color);
     transition: .3s;
 }
   
 .clock_logo:hover {
-    color: var(--first-color);
+    color: var(--title-color);
 }
   
 .clock_text {
