@@ -9,11 +9,40 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #f3fbff;
+    background: #D4E0D2;
 }
 
 .img-box {
     width: 60%;
     margin: auto;
     line-height: 0;
+    background-image: url(images/background.png) transparent;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-wrap {
+    width: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+span {
+    width: 1px;
+    height: 100%;
+    cursor: ew-resize;
+    background: #fff;
+    position: absolute;
+    left: 50px;
+    top: 0;
+}
+
+.arrow {
+    width: 20px;
+    position: absolute;
+    top: 50%;
+    margin-left: -10px;
+    margin-top: -10px;
 }
