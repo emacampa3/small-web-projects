@@ -142,12 +142,11 @@
     left: 1px;
 }
 .battery div div:last-child {
-    width: 0.5px;
+    width: 1px;
     height: 2px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
     background: rgba(255, 255, 255, 0.3);
     position: absolute;
     left: 22px;
-    top: 2px;
+    top: 3px;
     border-radius: 0 2px 2px 0;
 }
