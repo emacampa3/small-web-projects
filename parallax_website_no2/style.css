@@ -20,12 +20,12 @@ body, html {
 }
 
 .pimg1 {
-    background-image: url('images/img1.jpg');
+    background-image: url('images/img1.jpeg');
     min-height: 100%;
 }
 
 .pimg2 {
-    background-image: url('images/img2.jpg');
+    background-image: url('images/img2.jpeg');
     min-height: 400px;
 }
 
