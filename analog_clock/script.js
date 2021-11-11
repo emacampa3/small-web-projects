@@ -64,7 +64,7 @@ const clockText = () =>{
     textAmPm.innerHTML = ampm
 
     // We get the months of the year and show it
-    let months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+    let months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'September', 'Oct', 'Nov', 'Dec']
 
     // We show the day, the month and the year
     dateDay.innerHTML = day
