@@ -28,8 +28,6 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-/*   align-content: center;
-  align-items: flex-start; */
 }
 
 .flex-item-1 {
@@ -75,24 +73,6 @@ body {
   font-size: 300px;
 }
 
-.flex-item-3 p:nth-child(2) {
-  position: absolute;
-  font-size: 500px;
-  top: 25vh;
-  left: 41vw;
-}
-
-.flex-item-3 .circle {
-  position: relative;
-  top: -82.3vh;
-  left: 45.5vw;
-  height: 8vh;
-  width: 8vw;
-  border-radius: 50%;
-  background-color: transparent;
-  border: 3px solid #688361;
-}
-
 .flex-item-4 {
   width: 50vw;
   height: 35vh;
@@ -106,6 +86,15 @@ body {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
   color: #053032;
+}
+
+.flex-container .dot {
+  position: absolute;
+  top: 25vh;
+  left: 49%;
+  transform: translate(-49%);
+  color: #4e6349;
+  font-size: 500px;
 }
 
 .footer {
