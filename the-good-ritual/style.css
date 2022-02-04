@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Playfair+Display:wght@700&display=swap');
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  width: 100%;
+  text-align: center;
+  padding: 200px 0;
+  font-size: 30px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: #053032;
+  background-color: #f0ecda;
+}
+
+.bold {
+  margin-left: 10px;
+  font-size: 60px;
+}
+
+.flex-container {
+  width: 100vw;
+  height: 85vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+/*   align-content: center;
+  align-items: flex-start; */
+}
+
+.flex-item-1 {
+  width: 50vw;
+  height: 50vh;
+  background: url('https://images.pexels.com/photos/8498326/pexels-photo-8498326.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.flex-item-2 {
+  width: 50vw;
+  height: 50vh;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  background-color: #F2C5B9;
+}
+
+.flex-item-2 p:nth-child(1) {
+  margin-top: 15vh;
+  font-size: 25px;
+}
+
+.flex-item-2 p:nth-child(2) {
+  font-size: 30px;
+}
+
+.flex-item-2 p:nth-child(3) {
+  font-size: 15px;
+}
+
+.flex-item-3 {
+  width: 50vw;
+  height: 35vh;
+  background-color: #BFD1A0;
+  color: #4e6349;
+}
+
+.flex-item-3 p:nth-child(1) {
+  position: relative;
+  text-align: center;
+  bottom: 47vh;
+  font-size: 300px;
+}
+
+.flex-item-3 p:nth-child(2) {
+  position: absolute;
+  font-size: 500px;
+  top: 25vh;
+  left: 41vw;
+}
+
+.flex-item-3 .circle {
+  position: relative;
+  top: -82.3vh;
+  left: 45.5vw;
+  height: 8vh;
+  width: 8vw;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 3px solid #688361;
+}
+
+.flex-item-4 {
+  width: 50vw;
+  height: 35vh;
+  background-color: #F5F5F5;
+}
+
+.flex-item-4 p {
+  text-align: left;
+  padding: 8vh 10vw;
+  font-size: 20px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: #053032;
+}
+
+.footer {
+  width: 100%;
+  text-align: left;
+  padding: 100px 0;
+  font-size: 30px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: #4e6349;
+  background-color: #C8E6E0;
+}
+
+.footer span {
+  margin-left: 15vw;
+}
+
+.footer p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  text-align: left;
+  padding: 0 15vw;
+}
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Playfair Display', serif; */
